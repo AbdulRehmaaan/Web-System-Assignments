@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Counter</title>
+  <style>
+    body {
+      background-color: blueviolet;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    textarea {
+      background-color: lightgrey;
+      width: 400px;
+      height: 150px;
+      font-size: 20px;
+      padding: 50px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    p {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <b><i><h1>Count Characters.</i></b></h1>
+
+  <textarea id="myText" placeholder="Write your favorite quote here..." oninput="countChars()"></textarea>
+
+  <p id="result">Characters in TextArea are: 0</p>
+
+  <script>
+    function countChars() {
+      let text = document.getElementById("myText").value;
+      let count = text.length; 
+      document.getElementById("result").innerText = "Characters in TextArea are: " + count;
+    }
+  </script>
+</body>
+</html>

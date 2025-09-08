@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Striped Table</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(22, 101, 127);
+        }
+        .table {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #b2f0e8;
+        }
+        th {
+            background-color: purple;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Striped Table</h2>
+    <div class="table">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Abdul Rehman</td>
+            <td>22</td>
+            <td>Pakistan</td>
+        </tr>
+        <tr>
+            <td>Fayez</td>
+            <td>22</td>
+            <td>Pakistan</td>
+        </tr>
+        <tr>
+            <td>Awais</td>
+            <td>22</td>
+            <td>Pakistan</td>
+        </tr>
+        <tr>
+            <td>Adnan</td>
+            <td>22</td>
+            <td>Pakistan</td>
+        </tr>
+        <tr>
+            <td>Balaaj</td>
+            <td>1 Month</td>
+            <td>Pakistan</td>
+        </tr>
+
+    </table>
+    </div>
+</body>
+</html>

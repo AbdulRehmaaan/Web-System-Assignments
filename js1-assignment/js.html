@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Assignment</title>
+  <style>
+    body{
+        background-color: lightyellow;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    input {
+        margin: 10px;
+        padding: 8px;
+        font-size: 16px;
+    }
+  </style>
+
+</head>
+<body>
+    <h1><p>Give first name in first text field and last name in another text field 
+     and in third text field full name is automatically appear</p></h1>
+
+  <input type="text" id="fname" placeholder="First Name" oninput="combineName()"><br>
+
+  <input type="text" id="lname" placeholder="Last Name" oninput="combineName()"><br>
+
+  <input type="text" id="fullname" placeholder="Full Name" readonly>
+
+  <script>
+    function combineName() {
+      let first = document.getElementById("fname").value;
+      let last = document.getElementById("lname").value;
+
+      let full = first + last;
+
+      document.getElementById("fullname").value = full;
+    }
+  </script>
+</body>
+</html>
